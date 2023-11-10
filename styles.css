@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 211, 215);
+}
+
+h1 {
+    text-align: center;
+}
+
+.kittyImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border-radius: 50px;
+}
