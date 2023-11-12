@@ -40,9 +40,10 @@ h1:hover {
     border-radius: 50px;
 }
 
-.navbar-brand {
+.navbar-brand, footer {
     font-size: 20px;
     font-family: 'Lobster Two', sans-serif;
+    color: white;
 }
 
 .containerTwo {
