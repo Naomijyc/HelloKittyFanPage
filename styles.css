@@ -1,14 +1,36 @@
+/* Imported Fonts */
+
+@font-face {
+    font-family: "helloKittyFont";
+    src: url("/fonts/Boldins.otf") format("opentype");
+}
+
+/* Global Styles */
+
 *{
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(236, 211, 215);
+    background-color: rgb(238, 222, 225);
 }
 
 h1 {
     text-align: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    font-family: helloKittyFont, sans-serif;
+    color: rgb(234, 179, 197);
+    font-size: 50px;
 }
+
+h1:hover {
+    color: rgb(241,155,204);
+}
+
+
+
+/* Index HTML Styles */
 
 .kittyImage {
     display: block;
@@ -17,3 +39,99 @@ h1 {
     width: 75%;
     border-radius: 50px;
 }
+
+.navbar-brand {
+    font-size: 20px;
+    font-family: 'Lobster Two', sans-serif;
+}
+
+.containerTwo {
+    display: flex;
+    justify-content: center; /* Adjust as needed */
+    margin-top: 90px;
+  }
+  
+  .shopKitty, .kittyCafe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .shopKitty img, .kittyCafe img {
+    height: 300px;
+    width: auto;
+    border: 2px solid #B5EDED;
+    margin-bottom: 10px; /* Adjust as needed */
+    border-radius:50%;
+  }
+  
+  .fontForP{
+    font-family: helloKittyFont, sans-serif;
+    font-size: 20px;
+    color: #D82386;
+  }
+
+  /* Styles for About Me Page */
+  .aboutHelloKitty {
+    margin: 20px;
+ }
+ 
+ .aboutParagraph {
+    margin-bottom: 20px;
+    line-height: 1.5; /* Adjust the line height for better readability */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ .aboutMeImg {
+    width: 50%;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px solid #B5EDED;
+    margin-bottom: 20px;
+ }
+
+  /* / Media Query for Cellphones / */
+@media only screen and (max-width: 600px) {
+   h1 {
+     font-size: 30px; 
+     margin-bottom: 50px; 
+   }
+ 
+   .spaceKitty {
+     height: 200px; 
+   }
+ 
+   .navbar-brand, footer{
+     font-size: 20px; 
+     color: white;
+     font-family: "Lobster Two", sans-serif;
+   }
+ 
+   .containerTwo {
+     flex-direction: column; 
+     align-items: center;
+   }
+ 
+   .shopKitty, .kittyCafe {
+     padding: 20px; 
+   }
+ 
+   .shopKitty img, .kittyCafe img {
+     height: 200px; 
+     border: 2px solid #B5EDED;
+     margin-bottom: 10px;
+     border-radius: 50%;
+   }
+ 
+   .fontForP {
+     font-size: 16px; 
+   }
+ }
+
+
+
+
